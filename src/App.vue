@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <qrcode-stream @decode="onDecode"></qrcode-stream>
+    <qrcode-stream class="qr" @decode="onDecode"></qrcode-stream>
+    <div>{{ result }}</div>
   </div>
 </template>
 
@@ -27,5 +28,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin: 60px auto 0;
+}
+
+.qr {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
 }
 </style>
