@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <qrcode-qrcode-stream @decode="onDecode"></qrcode-qrcode-stream>
+  <div id="app">
+    <qrcode-stream @decode="onDecode"></qrcode-stream>
   </div>
 </template>
 
@@ -26,6 +26,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 60px auto 0;
 }
 </style>
